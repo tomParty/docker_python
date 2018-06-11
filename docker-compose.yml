@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  dsjose:
+    image: dsjose
+    build: .
+    command: >
+      python ./app/app.py
+    ports:
+      - 5000:3000
+      - 5050:5050
+    stdin_open: true
