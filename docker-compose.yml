@@ -7,6 +7,6 @@ services:
     command: >
       python ./app/app.py
     ports:
-      - 5000:3000
+      - 3000:3000
       - 5050:5050
     stdin_open: true
