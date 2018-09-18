@@ -9,7 +9,7 @@ try:
     import ptvsd
     # sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # sock.close()
-    ptvsd.enable_attach(secret=None,address=('0.0.0.0',5050))
+    ptvsd.enable_attach(address=('0.0.0.0',5050))
     ptvsd.wait_for_attach()
     print('ptvsd is started')
 except:
